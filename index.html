@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="./assets/globe_img.png" type="image/png" />
+        <link rel="     stylesheet" href="css/indice.css" />
+        <link rel="stylesheet" href="./style/misgifos.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/ef073bb9f6.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>
+            gifOS
+        </title>
+    </head>
+
+    <body class="wrapper">
+        <div class="welcome">
+            <p>¡Bienvenidos/as a Guifos!!! ------- Donde los gifs están ////// Número de visitas: 12.765.803</p>
+        </div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="go-home">
+                        <img
+                            src="assets/gifOF_logo.png"
+                            alt="logo"
+                            class="logoIndex"
+                        />
+                    </a>
+                </div>
+
+                <a href="upload.html" id="crear-guifos" class="botones">
+                    Crear Guifos</a>
+                    <select id="themes">
+                        <option value="sailorD" disabled selected hidden>Elegir tema</option>
+                        <option value="sailorDay" class="value-select">Sailor Day</option>
+                        <option value="sailorNight" class="value-select">Sailor Night</option>
+                    </select>
+                <a href="misgifos.html" class="misgifs" id="misgifs">
+                    Mis Guifos
+                </a>
+            </nav>
+            <form id="search-form">
+                <input
+                    id="search-input"
+                    type="text"
+                    placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+                    autocomplete="off"
+                    required="required"
+                    onkeyup="showSuggestion()"
+                />
+                <button type="submit" class="submit-search submit-search-o" id="button">
+                    <img src="assets/lupa_inactive.svg" alt="lupa inactiva" class="lupa"/>
+                    Buscar
+                </button>
+                <div id="resultadoSugerido"></div>
+            </form>
+            <div class="form-tags">
+                <div class="fakeInput01"></div>
+                <div id="results" class="results grid"></div>
+            </div>
+            <h3 class="fakeInput">Hoy te sugerimos: </h3>
+            <div id="random-gif" class="results grid"></div>
+            <h3 class="fakeInput">Tendencias:</h3>
+
+            <div id="trending" class="trending grid1"></div>
+        <script src="js/indice.js"></script>
+        <script src="js/themes.js"></script>
+    </body>
+</html>

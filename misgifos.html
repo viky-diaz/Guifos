@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/globe_img.png" type="image/png" />
+        <link rel="stylesheet" href="css/misgifos.css"/>
+        <link rel="stylesheet" href="css/indice.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="upload.html" />
+        <link rel="stylesheet" href="index.html" />
+        <script
+            src="https://kit.fontawesome.com/ef073bb9f6.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>gifOS</title>
+    </head>
+    
+    <body class="wrapper">
+            <div class="welcome">
+                <p>¡Bienvenidos/as a Guifos!!! ------- Donde los gifs están ////// Número de visitas: 12.765.803</p>
+            </div>
+                <div class="logo">
+                    <a href="index.html" class="go-home">
+                        <img
+                            src="./assets/arrow.svg"
+                            alt="arrow"
+                            id="back-arrow"
+                        />
+                        <img
+                            src="assets/gifOF_logo.png"
+                            alt="logo"
+                            class="logoIndex"
+                        />
+                    </a>
+                </div>
+                <a href="upload.html" id="crear-guifos" class="botones">
+                    Crear Guifos</a>
+
+                    <select id="themes">
+                        <option value="sailorD" disabled selected hidden>Elegir tema</option>
+                        <option value="sailorDay" class="value-select">Sailor Day</option>
+                        <option value="sailorNight" class="value-select">Sailor Night</option>
+                    </select>
+        <h3 class="fakeInput">Mis guifos</h3>
+        <div id="resultadosmisgifs"></div>
+        <script src="js/misgifos.js"></script>
+    </body>
+</html>

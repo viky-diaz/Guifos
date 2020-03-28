@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/56ad3d9948.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <title>gifOS - Crear Guifo</title>
+</head>
+<body class="">
+    <div class="welcome">
+        <p>¡Bienvenidos/as a Guifos!!! ------- Donde los gifs están ////// Número de visitas: 12.765.803</p>
+    </div>
+    <div class="container">
+        <header class="header">
+            <nav class="header--navbar">
+                <div class="logodiv">
+                    <img id="navbarArrow" src="assets/arrow.svg" alt="arrow_home_icon"/>
+                    <img id="navbarLogo" class="navbarLogo" alt="logo_navbar" src="assets/gifOF_logo.png"/>
+                </div>
+            </nav>
+        </header>
+        <section id="uploadsection">
+            <div id="howToRecordDiv" class="howtorecord">
+                <header>
+                    <h2>Crear Guifos</h2>
+                </header>
+                <div class="howtorecord--content">
+                    <img src="assets/window_img.png" alt="windows icon" />
+                    <div>
+                        <h3>Aquí podrás crear tus propios guifos</h3>
+                        <p> Crear tu <i><b>guifo</b></i> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                            personalizados. Los pasos para crear tu guifo son: </p>
+                        <p> <b>1)</b> Dar permisos de acceso a la cámara (solo por el tiempo de uso)</p>
+                        <p><b>2)</b> Capturar tu momento guifo</p>
+                        <p><b>3)</b> Revisar el momento</p>
+                        <p><b>4)</b> Listo para subir y compartir!</p>
+                        <p> ¿Quieres comenzar a subir tu <i><b>guifo</b></i> ahora?</p>
+                    </div>
+                </div>
+                <div class="howtorecord--buttons">
+                    <button id="howToRecordCancel" class="button--secondarywhite">Cancelar</button>
+                    <button id="howToRecordContinue" class="button--primary">Comenzar</button>
+                </div>
+            </div>
+            <div id="recordDiv" class="record">
+                <header>
+                    <h2 id="recordTitle">Un chequeo antes de empezar</h2>
+                    <img src="assets/button3.svg"/>
+                </header>
+                <div class="record--content">
+                    <div id="cameradiv" class="record--image">
+                        <video id="uploadVideo"></video>
+                        <alt id="gifPreview" class="record--gifPreview" src="" alt="recorded gif preview"></alt>
+                    </div>
+                    <div id="record--buttons" class="record--buttons">
+                        <div>
+                            <p id="recordCounter" class="recordCounter">0:0:0</p>
+                        </div>
+                        <div id="divButtonsStart" class="divButtonsStart">
+                            <button class="button--secondary buttonIcon"><i class="fas fa-camera"></i></button>
+                            <button id="recordButtonStart" class="button--secondary">Capturar</button>
+                        </div>
+                        <div id="divButtonsStop" class="divButtonsStop">
+                            <button class="button--orange buttonIcon"><i class="far fa-clock"></i></button>
+                            <button id="recordButtonStop" class="button--orange">Listo</button>
+                        </div>
+                        <div id="divButtonsUpload" class="divButtonsUpload">
+                            <button id="recordButtonRepeat" class="button--secondarywhite">Repetir Captura</button>
+                            <button id="recordButtonUpload" class="button--secondary">Subir Gifo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divUploading" id="divUploading">
+                <header>
+                    <h2>Subiendo Guifo</h2>
+                    <img src="assets/button3.svg"/>
+                </header>
+                <div class="divUploading--text">
+                    <div>
+                        <img src="assets/globe_img.png"/>
+                    </div>
+                    <h3>Estamos subiendo tu guifo...</h3>
+                    <p>Tiempo restante: <del>38 segundos</del> algunos minutos</p>
+                </div>
+                <div class="divUploading--buttons">
+                    <button id="recordbuttonCancelUpload" class="button--secondarywhite">Cancelar</button>
+                </div>
+            </div>
+            <div class="divuploadDone" id="divuploadDone">
+                <header>
+                    <h2> Guifo subido con éxito!</h2>
+                    <img src="assets/button3.svg"/>
+                </header>
+                <div class="divuploadDone--content">
+                    <div id="gifPreviewSmall" class="" src="" alt="recorded gif preview"></div>
+                    <div>
+                        <h3>Guifo creado con éxito!</h3>
+                        <button id="copyGifURL" class="button--secondarywhite">Copiar Enlace Guifo</button>
+                        <button id="saveGif" class="button--secondarywhite">Descargar Guifo</button>
+                    </div>
+                </div>
+                <div class="divuploadDone--buttons " id="cancelupload">
+                    <button id="uploadDone" class="button--primary">Listo</button>
+                </div>
+            </div>
+        </section>
+        <div id="gifsResults">
+            <p class="sectiontitle" id="gifsResultsText">Mis Guifos</p>
+            <div id="gifsResultsGrid" class="gifsgrid"></div>
+        </div>
+    </div>
+    <script src="js/functions.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>

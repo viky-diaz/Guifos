@@ -1,0 +1,344 @@
+video {
+    width: 832px;
+    height: 434px;
+    margin: 28px 0px 0px 15px;
+}
+
+.style-frame {
+    display: none;
+    width: 860px;
+    height: 548px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+.style-frame-o {
+    display: none;
+    width: 860px;
+    height: 548px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #b4b4b4;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+.lado-derecho {
+    width: 50%;
+    position: relative;
+    left: 187px;
+    top: -38px;
+    margin: auto;
+}
+
+#record,
+#stop {
+    margin: 5px 12px 16px 275px;
+    padding: 5px;
+    display: flex;
+    position: relative;
+    left: 432px;
+}
+
+#record-o {
+    margin: 5px 12px 16px 275px;
+    padding: 5px;
+    background-color: #ee3efe;
+    color: white;
+    display: flex;
+    position: relative;
+    left: 432px;
+}
+
+#stop {
+    color: #ffffff;
+    background-color: #ff6161;
+}
+
+.camara-icon {
+    margin: 2px 10px 0px 0px;
+}
+
+.timer-icon {
+    margin-right: 5px;
+}
+
+#video-frame::before {
+    content: "Captura Guifo";
+    display: block;
+    margin-left: 2px;
+    color: white;
+    padding-left: 5px;
+    background: linear-gradient(
+        90deg,
+        rgba(65, 128, 240, 1) 12%,
+        rgba(247, 201, 243, 1) 89%
+    );
+}
+
+#video-frame-o::before {
+    content: "Captura Guifo";
+    display: block;
+    margin-left: 2px;
+    color: white;
+    padding-left: 5px;
+    background: linear-gradient(
+        90deg,
+        rgba(46, 50, 251, 1) 12%,
+        rgba(238, 62, 254, 1) 89%
+    );
+}
+
+.linea {
+    margin-right: 10px;
+}
+
+#captura-gif {
+    display: none;
+    width: 721px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 180px;
+    padding-bottom: 30px;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+#captura-gif-o {
+    display: none;
+    width: 721px;
+    height: 391px;
+    margin: auto;
+    margin-bottom: 180px;
+    background: #b4b4b4;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+#captura-gif-title {
+    margin-top: 3%;
+    background: linear-gradient(
+        90deg,
+        rgba(65, 128, 240, 1) 12%,
+        rgba(247, 201, 243, 1) 89%
+    );
+}
+#captura-gif-title::before {
+    content: "Subiendo Guifo";
+    color: white;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+#captura-gif-title-o {
+    margin-top: 3%;
+    background: linear-gradient(
+        90deg,
+        rgba(46, 50, 251, 1) 12%,
+        rgba(238, 62, 254, 1) 89%
+    );
+}
+
+#captura-gif-title-o::before {
+    content: "Guifo Subido Con Éxito";
+    color: white;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+#captura-exito {
+    display: none;
+    width: 721px;
+    height: 391px;
+    margin: auto;
+    margin-bottom: 180px;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+#captura-exito-o {
+    display: none;
+    width: 721px;
+    height: 391px;
+    margin: auto;
+    margin-bottom: 180px;
+    background: #b4b4b4;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+#captura-exito-title {
+    margin-top: 3%;
+    background: linear-gradient(
+        90deg,
+        rgba(65, 128, 240, 1) 12%,
+        rgba(247, 201, 243, 1) 89%
+    );
+}
+#captura-exito-title::before {
+    content: "Guifo Subido Con Éxito";
+    color: white;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+#captura-exito-title-o {
+    margin-top: 3%;
+    background: linear-gradient(
+        90deg,
+        rgba(46, 50, 251, 1) 12%,
+        rgba(238, 62, 254, 1) 89%
+    );
+}
+
+#captura-exito-title-o::before {
+    content: "Guifo Subido Con Éxito";
+    color: white;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+#video-capturado {
+    width: 365px;
+    height: 191px;
+    margin-top: 38px;
+    margin-left: 18px;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+
+.botonGif {
+    display: inline-grid;
+    float: right;
+    margin: 40px 60px 0px 0px;
+}
+
+.botones-gif {
+    width: 256px;
+    height: 36px;
+    background-color: #fff4fd;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+.botonUpload {
+    background-color: #fff4fd;
+    margin: auto;
+    position: relative;
+    left: -16px;
+    top: 17px;
+    width: 95%;
+    height: 80%;
+    text-align: center;
+}
+
+.cancelar-subida {
+    width: 20%;
+    height: 43%;
+    position: relative;
+    left: 549px;
+    bottom: -62px;
+}
+
+.globe-img {
+    margin: auto;
+}
+
+.descargar-gif {
+    margin-top: 14px;
+    margin-bottom: 75px;
+}
+
+.title-save {
+    font-weight: bold;
+}
+
+#resultadosmisgifs {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+.descargar-gif:hover,
+.copiar-enlace:hover {
+    background-color: #dfdbdb;
+}
+
+#subir-guifo {
+    display: none;
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    position: relative;
+    left: 750px;
+    padding: 5px;
+}
+
+#subir-guifo:hover,
+#subir-guifo:active {
+    filter: brightness(90%);
+}
+
+#repetir-guifo {
+    display: none;
+    position: relative;
+    left: 595px;
+    bottom: 36px;
+    background: #fff4fd;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    padding: 5px;
+}
+
+#repetir-guifo:hover {
+    display: none;
+    position: relative;
+    left: 595px;
+    bottom: 36px;
+    background: #c4bcc2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    padding: 5px;
+}
+
+#repetir-guifo-o {
+    display: none;
+    position: relative;
+    left: 595px;
+    bottom: 36px;
+    background: #110038;
+    color: #b4b4b4;
+    border: 1px solid #b4b4b4;
+    box-shadow: inset -1px -1px 0 0 #5c5c5c, inset 1px 1px 0 0 #fff4fd;
+    padding: 5px;
+}
+
+#repetir-guifo-o:hover {
+    display: none;
+    position: relative;
+    left: 595px;
+    bottom: 36px;
+    background: #110038;
+    border: 2px solid #5c5c5c;
+    box-shadow: inset 1px 1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    padding: 5px;
+}
+
+.listo {
+    width: 60%;
+    margin-left: auto;
+}
+
+img[src="null"] {
+    display: none;
+}
+
+iframe {
+    border: 0px;
+    overflow: hidden;
+}
